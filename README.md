@@ -6,34 +6,6 @@ The repository includes Stage-1 representation learning, Global Directional Know
 
 The private Small-CowDataset and Large-CowDataset are not distributed because the associated cattle identity data were collected through an industry collaboration and are subject to confidentiality and data-use restrictions. Public-data evaluation is performed on Holstein2025 using the official training/validation split described in the manuscript.
 
-## Scope of this release
-
-Included:
-- DINOv2 ViT-S/14 backbone wrapper and task-wise cosine classifier
-- four-view rotation expansion: 0°, 90°, 180°, and 270°
-- supervised current-task classification
-- Global Directional Knowledge Distillation (GDKD)
-- Contrastive Knowledge Distillation (CKD)
-- old-class logit distillation
-- Prototype Restoration (PR)
-- adaptive prototype virtual replay
-- task-specific affine Bias Layers
-- Gaussian reconstruction for Stage-2 calibration
-- paper-aligned inference with calibrated four-view logits
-- preprocessing, deterministic seeds, and CIL metrics
-- final hyperparameters reported in the manuscript
-
-Not included:
-- the private Small-CowDataset and Large-CowDataset images or identity metadata
-- internal experiment-management utilities
-- baseline implementations
-- hyperparameter-search and ablation automation
-- private data paths or company-specific preprocessing utilities
-
-The private CowDatasets cannot be redistributed because they are company-internal data.
-For public-data evaluation, obtain Holstein2025 from the official Cattle-ID project and
-retain its official 82-identity training/validation split used in the manuscript.
-
 ## Experimental configuration
 
 The released default configuration matches the manuscript:
@@ -125,7 +97,4 @@ experiments reported in the manuscript.
 
 ## Reproducibility note
 
-This repository is a compact research release of the method-defining components rather than
-a copy of the full internal experimental workspace. The released equations, preprocessing,
-random-seed handling, hyperparameters, and inference path are aligned with the revised
-manuscript.
+The released modules correspond to the main DTSL components and experimental settings described in the manuscript.
