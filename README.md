@@ -1,12 +1,10 @@
-# DTSL Core Reference Implementation
+# DTSL: Decoupled Two-Stage Learning for Exemplar-Free Class-Incremental Cattle Face Recognition
 
-This repository provides the **core reference implementation** of DTSL
-(Decoupled Two-Stage Learning) for exemplar-free class-incremental cattle-face recognition.
+This repository provides the official core reference implementation of DTSL for exemplar-free class-incremental cattle face recognition. It accompanies the corresponding manuscript and contains the main method-defining modules and experimental settings required to reproduce the DTSL framework.
 
-The release is intentionally focused on the method-defining components used in the manuscript:
-Stage-1 representation learning, GDKD/CKD/logit distillation, prototype restoration and
-adaptive virtual replay, Stage-2 task-wise bias calibration, the four-view inference rule,
-the data preprocessing protocol, and the final hyperparameter configuration.
+The repository includes Stage-1 representation learning, Global Directional Knowledge Distillation (GDKD), Contrastive Knowledge Distillation (CKD), logit distillation, prototype restoration and adaptive virtual replay, Stage-2 task-wise bias calibration, four-view inference, preprocessing, evaluation metrics, random-seed control, and the hyperparameter configuration reported in the manuscript.
+
+The private Small-CowDataset and Large-CowDataset are not distributed because the associated cattle identity data were collected through an industry collaboration and are subject to confidentiality and data-use restrictions. Public-data evaluation is performed on Holstein2025 using the official training/validation split described in the manuscript.
 
 ## Scope of this release
 
